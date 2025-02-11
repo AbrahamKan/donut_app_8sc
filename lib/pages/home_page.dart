@@ -1,3 +1,8 @@
+import 'package:donut_app_8sc/tabs/burger_tab.dart';
+import 'package:donut_app_8sc/tabs/donut_tab.dart';
+import 'package:donut_app_8sc/tabs/pizza_tab.dart';
+import 'package:donut_app_8sc/tabs/pancake_tab.dart';
+import 'package:donut_app_8sc/tabs/smoothie_tab.dart';
 import 'package:donut_app_8sc/utils/my_tab.dart';
 import 'package:flutter/material.dart';
 
@@ -53,8 +58,18 @@ class _HomepageState extends State<Homepage> {
               ),
             ),
             //Tap bar
-            TabBar(tabs: myTabs)
+            TabBar(tabs: myTabs),
             //Tap bar view
+            Expanded(child:
+            TabBarView(
+              children:[
+              DonutTab(),
+              BurgerTab(),
+              SmoothieTab(),
+              PancakeTab(),
+              PizzaTab()
+              ]
+              ))
             //Carrito
 
           ],
