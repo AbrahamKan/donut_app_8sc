@@ -18,10 +18,10 @@ class DonutTab extends StatelessWidget {
       crossAxisCount: 2),
       itemBuilder: (context, index){
         return DonutTile(
-          donutFlavor: (donutsOnSale[index][0],
-          donutPriece: (donutsOnSale[index][1],
-          donutColor: (donutsOnSale[index][3],
-          donutName: (donutsOnSale[index][4]
+          donutFlavor: donutsOnSale[index][0],
+          donutPriece: donutsOnSale[index][1],
+          donutColor: donutsOnSale[index][2],
+          donutName: donutsOnSale[index][3]
         );
       },
      //cuantos elementos
