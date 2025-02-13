@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../utils/donut_tile.dart';
+
 class DonutTab extends StatelessWidget {
   //Lista de donas
   final List donutsOnSale = [
@@ -19,9 +21,9 @@ class DonutTab extends StatelessWidget {
       itemBuilder: (context, index){
         return DonutTile(
           donutFlavor: donutsOnSale[index][0],
-          donutPriece: donutsOnSale[index][1],
+          donutPrice: donutsOnSale[index][1],
           donutColor: donutsOnSale[index][2],
-          donutName: donutsOnSale[index][3]
+          imageName: donutsOnSale[index][3]
         );
       },
      //cuantos elementos
