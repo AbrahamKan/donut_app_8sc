@@ -17,7 +17,7 @@ class DonutTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-      crossAxisCount: 2),
+      crossAxisCount: 2, childAspectRatio: 1/1.5),
       itemBuilder: (context, index){
         return DonutTile(
           donutFlavor: donutsOnSale[index][0],
