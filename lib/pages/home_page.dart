@@ -17,15 +17,15 @@ class _HomepageState extends State<Homepage> {
 
   List<Widget> myTabs = [
     //donut tab
-    MyTab(iconPath: 'lib/icons/donut.png'),
+    MyTab(iconPath: 'lib/icons/donut.png', tabName: 'Donuts'),
     //burger tab
-    MyTab(iconPath: 'lib/icons/burger.png'),
+    MyTab(iconPath: 'lib/icons/burger.png', tabName: 'Burger'),
     //smoothie tab
-    MyTab(iconPath: 'lib/icons/smoothie.png'),
+    MyTab(iconPath: 'lib/icons/smoothie.png', tabName: 'Smoothie'),
     //pancake tab
-    MyTab(iconPath: 'lib/icons/pancakes.png'),
+    MyTab(iconPath: 'lib/icons/pancakes.png', tabName: 'Pancakes'),
     //pizza tab
-    MyTab(iconPath: 'lib/icons/pizza.png')
+    MyTab(iconPath: 'lib/icons/pizza.png', tabName: 'Pizza')
   ];
 
   @override
@@ -59,6 +59,8 @@ class _HomepageState extends State<Homepage> {
             ),
             //Tap bar
             TabBar(tabs: myTabs),
+            //color texto seleccionado
+
             //Tap bar view
             Expanded(child:
             TabBarView(
@@ -69,9 +71,41 @@ class _HomepageState extends State<Homepage> {
               PancakeTab(),
               PizzaTab()
               ]
-              ))
+              )),
             //Carrito
+            Container(
+              color: Colors.white,
+              padding: const EdgeInsets.all(16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Padding(
+                    padding: EdgeInsets.only(left: 28),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("2 Items | \$45",
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
+                      ),
 
+                    ],
+                    ),),
+                    ElevatedButton(
+                      onPressed: (){},
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.pink,
+                      ),
+                      child: const Text("View Cart",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold
+                      ),
+                      ))
+                ],
+              ),
+            )
           ],
         ),
       ),

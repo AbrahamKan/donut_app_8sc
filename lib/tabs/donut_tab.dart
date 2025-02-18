@@ -25,6 +25,7 @@ class DonutTab extends StatelessWidget {
           donutColor: donutsOnSale[index][2],
           imageName: donutsOnSale[index][3]
         );
+
       },
      //cuantos elementos
       itemCount: donutsOnSale.length,
