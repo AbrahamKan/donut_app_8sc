@@ -19,7 +19,7 @@ class MyTab extends StatelessWidget {
               color: Colors.grey[200],
               borderRadius: BorderRadius.circular(16),
             ),
-            child: Image.asset(iconPath, 
+            child: Image.asset(iconPath,
             color: Colors.grey[600],),
           ),
         ),

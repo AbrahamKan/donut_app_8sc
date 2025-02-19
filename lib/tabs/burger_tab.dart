@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
-import '../utils/donut_tile.dart'; // Asegúrate de que este archivo contenga el widget DonutTile
+import '../utils/donut_tile.dart';
 
 class BurgerTab extends StatelessWidget {
   // Lista de hamburguesas
   final List burgersOnSale = [
     // [burgerFlavor, burgerPrice, burgerColor, imageName]
-    ["ice Cream", "36", Colors.blue, "lib/images/icecream_donut.png"],
-    ["Strawberry", "45", Colors.red, "lib/images/strawberry_donut.png"],
-    ["Grape Ape", "84", Colors.purple, "lib/images/grape_donut.png"],
-    ["Chocolate", "95", Colors.brown, "lib/images/chocolate_donut.png"]
+    ["Burger Simple", "50", Colors.blue, "lib/images/burger1.png"],
+    ["Burger jumbo", "60", Colors.red, "lib/images/burger2.png"],
+    ["Burger con cebolla", "70", Colors.purple, "lib/images/burger3.png"],
+    ["Burger feliz", "80", Colors.brown, "lib/images/burger4.png"],
+
+    ["Burger ", "50", Colors.blue, "lib/images/burger5.png"],
+    ["Burger ", "60", Colors.red, "lib/images/burger6.png"],
+    ["Burger ", "70", Colors.purple, "lib/images/burger7.png"],
+    ["Burger ", "80", Colors.brown, "lib/images/burger8.png"]
   ];
 
   BurgerTab({super.key});
